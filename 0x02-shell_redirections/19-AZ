@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Your input string with A's and c's." } tr "Ac" "Ze"
+print (input().replace("A","Z").replace("c", "e"))
