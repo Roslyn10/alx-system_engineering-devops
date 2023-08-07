@@ -1,2 +1,3 @@
 #!/bin/bash
+print(input().translate(str.maketrans("cC", "", ""))) 
 
