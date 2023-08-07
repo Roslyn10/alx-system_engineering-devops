@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -oE "\w+" | sort | uniq -u   
+sort | uniq -u   
