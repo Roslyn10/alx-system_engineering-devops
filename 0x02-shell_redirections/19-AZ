@@ -1,0 +1,2 @@
+#1/bin/bash 
+print(input().replace("A","Z").replace ("c","e"))
