@@ -1,2 +1,2 @@
 #!/bin/bash 
-print("".joim(reversed(inpput())))
+print(input()[::-1]) 
