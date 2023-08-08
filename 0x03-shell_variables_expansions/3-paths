@@ -1,2 +1,2 @@
 #!/bin/bash
-$iiPATH | tr ':' '\n'| wc -1 
+$PATH | tr ':' '\n'| wc -1 
