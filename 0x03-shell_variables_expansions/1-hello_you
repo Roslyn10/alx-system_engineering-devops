@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "Hello user #(whoami) 
+#!/bin/bash 
+alias user = Roslyn | echo hello $(user)
