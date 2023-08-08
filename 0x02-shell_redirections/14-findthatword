@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o "bin" /etc/passwd| wc -1  
+grep -i "root" /etc/passwd|  
