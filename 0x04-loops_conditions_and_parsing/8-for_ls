@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 #A script that displays the current directory
 
-ls
+files=$(ls)
+
+while IFS= read -r file; do
+	echo "$file"
+done <<<"$files"
