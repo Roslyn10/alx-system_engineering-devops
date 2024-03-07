@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#A script that displays Best School 10 times
+
+phrase="Best School"
+
+for ((b=0; b<10; b++)); do
+	echo "$phrase"
+done
