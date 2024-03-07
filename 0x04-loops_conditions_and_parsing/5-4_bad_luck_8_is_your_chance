@@ -6,4 +6,16 @@ phrase2="bad luck"
 phrase3="good luck"
 
 count=0
-
+while [ $count -lt 11 ]
+do 
+	if [ $count = 4 ]
+	then 
+		echo "$phrase2"
+	elif [ $count = 8 ]
+	then
+		echo "$phrase3"
+	else
+		echo "$phrase1"
+	fi 
+	let count+=1
+done
