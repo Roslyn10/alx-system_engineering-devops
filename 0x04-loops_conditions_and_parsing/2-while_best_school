@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#A script that prints "Best School" 10 times, using a while loop
+
+phrase="Best School"
+w=1
+while [ $w -le 10 ]
+do
+	echo "$phrase"
+	w=$(( $w + 1))
+done
