@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 #A script that displays "Best School" 10 times, but on 9 "Hi"
 
-Phrase1="Best School"
-Phrase2="Hi"
 count=0
-while [ $count -lt 11 ]; do
-	if [ $count = 9 ]
-	then
-		echo "$Phrase2"
-	else
-		echo "$Phrase1"
-	fi
-	let count+=1
+while [ $count -lt 11 ]
+do
+    if [ $count = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    let count+=1
 done
