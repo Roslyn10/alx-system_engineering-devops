@@ -3,6 +3,6 @@
 
 files=$(ls)
 
-while IFS= read -r file; do
+for file in $files; do
 	echo "$file"
-done <<<"$files"
+done
