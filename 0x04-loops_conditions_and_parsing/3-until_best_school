@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # A script that displays "Best School" 10 times, Using until
 
-COUNTER=0
-while [ $COUNTER -lt 10 ]
-do
-    echo "Best School"
-    let COUNTER=COUNTER+1
+phrase="Best School"
+
+count=0
+
+until [ $count -eq 10 ]; do
+	echo "$phrase"
+	((count++))
 done
