@@ -1,2 +1,19 @@
 #!/usr/bin/env bash
 #A script that displays numbers from 1 to 100, "FizzBuzz
+
+
+phrase1="Fizz"
+phrase2="Buzz"
+phrase3="FizzBuzz"
+
+for ((i=1; i<=100; i++)); do
+    if [ $((i%15)) == 0 ]; then
+        echo "$phrase3"
+    elif [ $((i%5)) == 0 ]; then
+        echo "$phrase2"
+    elif [ $((i%3)) == 0 ]; then
+        echo "$phrase1"
+    else
+        echo "$i"
+    fi
+done
