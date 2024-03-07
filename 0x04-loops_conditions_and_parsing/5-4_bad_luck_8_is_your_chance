@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#A script that loops "Best School", but on 4 = "bad luck"; 8 = "good luck"
+
+phrase1="Best School"
+phrase2="bad luck"
+phrase3="good luck"
+
+count=0
+
