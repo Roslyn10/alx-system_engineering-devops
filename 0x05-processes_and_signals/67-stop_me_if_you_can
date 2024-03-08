@@ -1,0 +1,4 @@
+#!/usr/bin/env/bash
+#A script that terminates the output of 7-highlander
+
+pkill -f "7-highlander"
