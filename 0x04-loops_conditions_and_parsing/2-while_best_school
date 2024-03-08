@@ -6,5 +6,5 @@ w=1
 while [ $w -le 10 ]
 do
 	echo "$phrase"
-	w=$(( $w + 1))
+	w=$(( w + 1))
 done
