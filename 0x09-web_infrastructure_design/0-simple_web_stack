@@ -1,7 +1,7 @@
 0. Specifics about this infrastructure:
 -----------------------------------------
 
-**What is a server?**
+__What is a server?__
 A server is a computer or software system that provides functionality, services, data or resources to other computers, know as clients, over a network. These services can range from delivering web pages and emails, to storing and managing files or running applications.
 
 **What is the role of the domain name?**
