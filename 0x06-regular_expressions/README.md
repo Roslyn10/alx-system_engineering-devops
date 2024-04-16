@@ -3,28 +3,33 @@
 0. Simply matching School
 
 	* Requirements:
+		* The regular expression must match School
 		* Create a Ruby script that accepts one argument an pass it to a regular expression matching method
 
 1. Repetition Token #0
 
 	* Requirements:
+		* The regular expression must match hbttn, hbtttn, hbttttn, hbtttttn
 		* Create a Ruby script that accepts one arguent and passes it to a regular expression matching method
 
 2. Repetition Token #1
 
 	* Requirements:
+		* The regular expression must match htn, hbtn
 		* Create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 3. Repetition Token #2
 
 	* Requirements:
+		* The regular expression must match hbtn, hbttn, hbtttn, hbttttn
 		* Create a Ruby script that accepts one argu,ent and pass it to a regulat expression matching method
 
 4. Repetition Token #3
 
 	* Requirements:
+		* The regular expression must match hbn, hbtn, hbttn, hbtttn, hbttttn
 		* Create a Ruby script that accepts one argument and pass it to a regualar expression matching method
-		* Youre regex should not contain square brackets
+		* Your regex should not contain square brackets
 
 5. Not quite HBTN yet
 
