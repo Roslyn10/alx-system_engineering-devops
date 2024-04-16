@@ -1,0 +1,29 @@
+https://docs.google.com/document/d/1Y2raSgfnb8qCX9uAq-O2qUyF0thLwXbm_RJ1_VDacGs/edit?usp=sharing
+
+ User
+    |
+    v
+   Browser
+    |
+    v
+   DNS Server
+    |
+    v
+   Domain Register
+    |
+    v
+   ┌───────────┐
+   │           │
+   │  www.     │
+   │foobar.com │
+   │           │
+   └───────────┘
+      |
+      v
+   Web Server
+      |
+      v
+   Application Server
+      |
+      v
+   Database Server
