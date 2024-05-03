@@ -4,6 +4,6 @@ package { 'python3-pip':
 
 exec { 'install_flask':
   command => 'usr/bin/pip3 install Flask==2.2.0',
-  unless => '/usr/bin/pip3 show flask | grep -q "Version: 2.1.0"'
-  requires => Package['python3-pip'],
+  creates => '/usr/local/lib/python3.*/dist-packages/Flask-2.1.0.dist-info',
+  require => Package['python3-pip'],
 }
