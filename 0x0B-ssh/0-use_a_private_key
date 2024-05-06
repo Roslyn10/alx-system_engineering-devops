@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A sript that uses ssh to connect to the server using the private key
+
+ssh -i ~/.ssh/school
