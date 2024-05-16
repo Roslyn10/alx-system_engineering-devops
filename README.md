@@ -14,3 +14,4 @@ alx_system_engineering_devops
 * 0x0A-configuration_management
 * 0x0B-ssh
 * 0x0D-web_stack_debugging_0
+* 0x0E-web_stack_debugging_1
