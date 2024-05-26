@@ -1,0 +1,77 @@
+What Happens When You Type https://www.google.com in Your Browser and Press Enter?
+
+
+Have you ever wondered what happens in the background when you type https://www.google.com into your browser and press Enter? Let's dive into the details.
+
+URL Parsing
+A URL (User Resource Locator) breaks down what you typed into comprehensive strings that allows the machine to understand, this makes locating the website easy. 
+
+https://www.google.com gets broken into 2 components: 
+https: (Hypertext Transfer Protocol Secure) is the protocol.
+www.google.com: This is the hostname.
+
+
+DNS Request
+The Domain Name System (DNS) is  the phonebook of the Internet. It is a computer with a database containing the public Ip addresses associated with the names of websites. 
+
+The browser checks its cache to see if it already knows the IP address for "www.google.com".
+If not found in the cache, it sends a DNS query to a DNS server to resolve the domain name into an IP address.
+The DNS server responds with the IP address of Google's servers.
+
+
+TCP/IP
+With the IP address obtained, the browser initiates a TCP (Transmission Control Protocol) connection to the IP address. TCP ensures that the data will be delivered in the same order in which it's sent. 
+The IP (Internet Protocol) is responsible for routing packets from host to host but does not guarantee the delivery of those packets.
+
+TCP/IP involves a three-way handshake:
+
+1) The browser sends a SYN (synchronize) packet to the server, establishing a connection.
+2) The server responds with a SYN-ACK (synchronize-acknowledge) packet, acknowledging the client's SYN packet.
+3) The client responds with an ACK (acknowledge) packet. The connection is now established, and data transfer can begin.
+
+
+Firewall
+A firewall is a security system that monitors and controls incoming and outgoing network traffic. 
+The firewall inspects the packets of data that are sent and received by the browser. They ensure that incoming packets are part of an established connection initiated by the browser. 
+
+HTTPS/SSL
+After establishing the TCP connection and passing the firewall, the browser initiates an SSL/TLS handshake to create a secure connection.
+
+The process includes:
+
+The browser sends a ClientHello message with supported cipher suites.
+The server responds with a ServerHello message, selecting a cipher suite.
+The server sends its SSL certificate.
+The browser verifies the certificate and creates a pre-master secret, encrypting it with the server's public key, then sending it to the server.
+Both parties generate session keys from the pre-master secret to encrypt the session.
+This establishes an encrypted HTTPS connection.
+
+Load Balancer
+The request reaches Google's load balancer, which distributes incoming requests across multiple servers to ensure optimal resource use and responsiveness.
+
+The load balancer determines which web server to forward the request to, based on factors like server load and response time.
+If a server is unavailable or unresponsive, the load balancer detects this and redirects traffic to another working server. Load balancers also offer additional security against DDoS attacks and SSL offloading.
+
+
+Web Server
+A web server listens for incoming data from the client. It processes these requests and generates a response.
+
+Request Handling: The selected web server receives the request, processes it, and determines how to handle it, possibly passing it to an application server for dynamic content generation.
+
+Application Server
+If the application server needs data, it queries the database server The application server process the request executing code, querying databases, and performing business logic 
+
+Database
+If the application server needs data, it queries the database server(s). The database server processes the query, retrieves the required data, and sends it back to the application server. 
+
+Response Assembly
+Compilation: The application server compiles the data and creates the response.
+Return to Web Server: The response is sent back to the web server.
+Sending the Response to the Browser
+Load Balancer: The web server sends the response back to the load balancer.
+Forwarding: The load balancer forwards the response to your browser.
+
+
+Rendering the Response
+The browser receives the response, parses the HTML, CSS, and JavaScript, and renders the page for you to see, allowing you to access Google's webpage.
+
