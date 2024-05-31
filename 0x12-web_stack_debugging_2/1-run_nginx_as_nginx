@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Allows Nginx to run as the nginx user
+
+sed -i 's/^user .*/user nginx;/' /etc/nginx/nginx.con
+sed -i 's/^listen 80;/listen 8080;/g' /etc/nginx/sites-available/default
+sed -i 's/^    # listen \[::\]:80 default_server;/    listen [::]:8080 default_server;/g' /etc/nginx/sites-available/default
+service nginx restart
