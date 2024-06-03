@@ -1,0 +1,7 @@
+#!/bin/usr/env bash
+#Installs ngnix on server
+sudo apt-get update -y
+sudo apt-get install nginx -y
+sudo chown -R ubuntu /var/www
+sudo service ngnix start
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
