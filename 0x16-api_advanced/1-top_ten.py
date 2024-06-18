@@ -15,7 +15,10 @@ def top_ten(subreddit):
     headers = {"User-Agent": "Mozilla/5.0"}
     params = {"limit": 10}
 
-    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    response = requests.get(
+            url, headers=headers,
+            params=params, allow_redirects=False
+            )
 
     if response.status_code == 200:
         for get_data in response.json().get("data", {}).get("children", []):
