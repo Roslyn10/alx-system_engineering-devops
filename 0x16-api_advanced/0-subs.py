@@ -9,8 +9,10 @@ def number_of_subscribers(subreddit):
     """
 
     base_url = 'https://www.reddit.com'
-    api_uri = '{base}/r/{subreddit}/about.json'.format(base=base_url,
-                                                       subreddit=subreddit)
+    api_uri = '{base}/r/{subreddit}/about.json'.format(
+            base=base_url,
+            subreddit=subreddit
+            )
 
     user_agent = {'User-Agent': 'Mozilla/5.0'}
 
